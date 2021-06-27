@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 
   private void Start()
   {
+    Time.timeScale = 1;
     Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
     isDragging = false;
     GameOverCanvas.SetActive(false);
@@ -111,9 +112,9 @@ public class GameManager : MonoBehaviour
     // x : -7 ~ 7
     // y : -4 ~ 4
     // int startPos_X = -7, startPos_Y = 4;
-    for (int i = 4; i > -5; i--)
+    for (float i = 4; i > -4; i -= 0.8f)
     {
-      for (int j = -7; j < 8; j++)
+      for (float j = -7; j < 8; j += 0.8f)
       {
         GameObject bubble = (GameObject)Instantiate(NumPrefab[Random.Range(0, 9)],
         new Vector2(j, i),
