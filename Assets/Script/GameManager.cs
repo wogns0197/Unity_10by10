@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     GoalNum = 10;
     score = 0;
     sum = 0;
-    MAX_TIMER = 1f;
+    MAX_TIMER = 90f;
     timer = MAX_TIMER;
     SettingBoard();
   }
