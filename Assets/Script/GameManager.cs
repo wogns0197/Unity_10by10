@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 
   private void Start()
   {
+    Time.timeScale = 1;
     Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
     isDragging = false;
     GameOverCanvas.SetActive(false);
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
     GoalNum = 10;
     score = 0;
     sum = 0;
-    MAX_TIMER = 60f;
+    MAX_TIMER = 1f;
     timer = MAX_TIMER;
     SettingBoard();
   }
