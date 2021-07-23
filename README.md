@@ -38,7 +38,7 @@ void SettingBoard(){
 ```
 * Make a Bubble(Number-Block) from prefab resources **randomly** and add to List to supervise them
 * Each Bubbles' size are same to *Unit size 4*. So I made a virtual grid position and arrange them to each position
-* Tought that float *0.8* can be replaced with **size of Prefab**
+* Thought that float *0.8* can be replaced with **size of Prefab**
 
 ## Mouse Dragging Effect
 ```C#
@@ -60,7 +60,7 @@ void MouseDrag(Vector2 curMousePos)
 * Make a Canvs-Image, resizing and repositioning at first mouse click and after mouse movement.
 * Position a Image at **Left-Bottom** pivot and calculate its width, height, center pivot position in Update func
 
-## Caculate Bubbles
+## Calculate Bubbles
 ```C#
 private void SelectBubbles(Vector2 curMousePos)
   {
